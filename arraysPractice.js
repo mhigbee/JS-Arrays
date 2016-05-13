@@ -77,7 +77,23 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 //Write a function called divider that is given one argument, numbersArray.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
 
-function numbersArray
+function divider (numbersArray) {
+    var newArray1 = [];
+    var newArray2 = [];
+    for (var i = 0 ; i < numbersArray.length; i++){
+        if (numbersArray[i] % 2 !== 0 ) {
+            newArray1.push(numbersArray[i]);
+            i--;
+        }
+        else {
+            newArray2.push(numbersArray[i]);
+            i--;
+        }
+    }
+    var evensAndOddsArray = [newArray1, newArray2];
+    console.log(evensAndOddsArray);
+    return evensAndOddsArray;
+}
 
 
 //Next Problem
