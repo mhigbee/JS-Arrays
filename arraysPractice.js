@@ -83,14 +83,12 @@ function divider (numbersArray) {
     for (var i = 0 ; i < numbersArray.length; i++){
         if (numbersArray[i] % 2 !== 0 ) {
             newArray1.push(numbersArray[i]);
-            i--;
         }
         else {
             newArray2.push(numbersArray[i]);
-            i--;
         }
     }
-    var evensAndOddsArray = [newArray1, newArray2];
+    var evensAndOddsArray = [newArray2, newArray1];
     console.log(evensAndOddsArray);
     return evensAndOddsArray;
 }
